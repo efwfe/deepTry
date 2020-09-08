@@ -10,6 +10,9 @@ from tensorflow import keras
 
 dataset, characters = [], []
 data_dir = Path("../imgs")
+seed = 1234
+np.random.seed(seed)
+tf.random.set_seed(seed)
 
 training_data, validation_data = train_test_split(dataset, test_size=0.1, random_state=seed)
 
