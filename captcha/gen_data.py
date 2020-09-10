@@ -9,7 +9,7 @@ from sklearn.model_selection import train_test_split
 from tensorflow import keras
 
 dataset, characters = [], []
-data_dir = Path("../imgs")
+data_dir = Path("../images")
 seed = 1234
 np.random.seed(seed)
 tf.random.set_seed(seed)
